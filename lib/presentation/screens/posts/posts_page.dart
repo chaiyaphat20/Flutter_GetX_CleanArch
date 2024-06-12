@@ -20,8 +20,11 @@ class PostPage extends StatelessWidget {
             width: 150,
             child: _controller.photosList[index].thumbnailUrl !=null?Image.network(
             _controller.photosList[index].thumbnailUrl!
-          ): Text(_controller.photosList[index].thumbnailUrl??"No"),
-          )],);
+          ): SizedBox(),
+          ),
+          Expanded(child: Column(children: [Text(_controller.photosList[index].title??"")],))
+          ],
+          );
         }, separatorBuilder: (context, index) {
           return SizedBox(height: 10);
         }, itemCount: _controller.photosList.length)
