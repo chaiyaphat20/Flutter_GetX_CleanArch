@@ -7,7 +7,7 @@ import 'package:get/route_manager.dart';
 class SplashController extends GetxController{
   moveToSignInPage(){
     Timer.periodic(const Duration(seconds: 2), (timer){
-      Get.toNamed(AppRoutes.Signin);
+      Get.toNamed(AppRoutes.PostsPage);
     });
   }
 }
