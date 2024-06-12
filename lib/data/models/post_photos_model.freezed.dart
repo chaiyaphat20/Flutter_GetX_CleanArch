@@ -23,7 +23,7 @@ mixin _$PostPhotosModel {
   int? get albumId => throw _privateConstructorUsedError;
   int? get id => throw _privateConstructorUsedError;
   String? get title => throw _privateConstructorUsedError;
-  String? get thumbnaiUrl => throw _privateConstructorUsedError;
+  String? get thumbnailUrl => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -37,7 +37,7 @@ abstract class $PostPhotosModelCopyWith<$Res> {
           PostPhotosModel value, $Res Function(PostPhotosModel) then) =
       _$PostPhotosModelCopyWithImpl<$Res, PostPhotosModel>;
   @useResult
-  $Res call({int? albumId, int? id, String? title, String? thumbnaiUrl});
+  $Res call({int? albumId, int? id, String? title, String? thumbnailUrl});
 }
 
 /// @nodoc
@@ -56,7 +56,7 @@ class _$PostPhotosModelCopyWithImpl<$Res, $Val extends PostPhotosModel>
     Object? albumId = freezed,
     Object? id = freezed,
     Object? title = freezed,
-    Object? thumbnaiUrl = freezed,
+    Object? thumbnailUrl = freezed,
   }) {
     return _then(_value.copyWith(
       albumId: freezed == albumId
@@ -71,9 +71,9 @@ class _$PostPhotosModelCopyWithImpl<$Res, $Val extends PostPhotosModel>
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      thumbnaiUrl: freezed == thumbnaiUrl
-          ? _value.thumbnaiUrl
-          : thumbnaiUrl // ignore: cast_nullable_to_non_nullable
+      thumbnailUrl: freezed == thumbnailUrl
+          ? _value.thumbnailUrl
+          : thumbnailUrl // ignore: cast_nullable_to_non_nullable
               as String?,
     ) as $Val);
   }
@@ -87,7 +87,7 @@ abstract class _$$PostPhotosModelImplCopyWith<$Res>
       __$$PostPhotosModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int? albumId, int? id, String? title, String? thumbnaiUrl});
+  $Res call({int? albumId, int? id, String? title, String? thumbnailUrl});
 }
 
 /// @nodoc
@@ -104,7 +104,7 @@ class __$$PostPhotosModelImplCopyWithImpl<$Res>
     Object? albumId = freezed,
     Object? id = freezed,
     Object? title = freezed,
-    Object? thumbnaiUrl = freezed,
+    Object? thumbnailUrl = freezed,
   }) {
     return _then(_$PostPhotosModelImpl(
       albumId: freezed == albumId
@@ -119,9 +119,9 @@ class __$$PostPhotosModelImplCopyWithImpl<$Res>
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
-      thumbnaiUrl: freezed == thumbnaiUrl
-          ? _value.thumbnaiUrl
-          : thumbnaiUrl // ignore: cast_nullable_to_non_nullable
+      thumbnailUrl: freezed == thumbnailUrl
+          ? _value.thumbnailUrl
+          : thumbnailUrl // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
@@ -131,7 +131,7 @@ class __$$PostPhotosModelImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$PostPhotosModelImpl implements _PostPhotosModel {
   const _$PostPhotosModelImpl(
-      {this.albumId, this.id, this.title, this.thumbnaiUrl});
+      {this.albumId, this.id, this.title, this.thumbnailUrl});
 
   factory _$PostPhotosModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$PostPhotosModelImplFromJson(json);
@@ -143,11 +143,11 @@ class _$PostPhotosModelImpl implements _PostPhotosModel {
   @override
   final String? title;
   @override
-  final String? thumbnaiUrl;
+  final String? thumbnailUrl;
 
   @override
   String toString() {
-    return 'PostPhotosModel(albumId: $albumId, id: $id, title: $title, thumbnaiUrl: $thumbnaiUrl)';
+    return 'PostPhotosModel(albumId: $albumId, id: $id, title: $title, thumbnailUrl: $thumbnailUrl)';
   }
 
   @override
@@ -158,13 +158,14 @@ class _$PostPhotosModelImpl implements _PostPhotosModel {
             (identical(other.albumId, albumId) || other.albumId == albumId) &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.title, title) || other.title == title) &&
-            (identical(other.thumbnaiUrl, thumbnaiUrl) ||
-                other.thumbnaiUrl == thumbnaiUrl));
+            (identical(other.thumbnailUrl, thumbnailUrl) ||
+                other.thumbnailUrl == thumbnailUrl));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, albumId, id, title, thumbnaiUrl);
+  int get hashCode =>
+      Object.hash(runtimeType, albumId, id, title, thumbnailUrl);
 
   @JsonKey(ignore: true)
   @override
@@ -186,7 +187,7 @@ abstract class _PostPhotosModel implements PostPhotosModel {
       {final int? albumId,
       final int? id,
       final String? title,
-      final String? thumbnaiUrl}) = _$PostPhotosModelImpl;
+      final String? thumbnailUrl}) = _$PostPhotosModelImpl;
 
   factory _PostPhotosModel.fromJson(Map<String, dynamic> json) =
       _$PostPhotosModelImpl.fromJson;
@@ -198,7 +199,7 @@ abstract class _PostPhotosModel implements PostPhotosModel {
   @override
   String? get title;
   @override
-  String? get thumbnaiUrl;
+  String? get thumbnailUrl;
   @override
   @JsonKey(ignore: true)
   _$$PostPhotosModelImplCopyWith<_$PostPhotosModelImpl> get copyWith =>

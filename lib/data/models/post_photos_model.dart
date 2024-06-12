@@ -18,7 +18,7 @@ class PostPhotosModel with _$PostPhotosModel {
       int? albumId,
       int? id,
       String? title,
-      String? thumbnaiUrl,
+      String? thumbnailUrl,
     } 
   ) = _PostPhotosModel;
 

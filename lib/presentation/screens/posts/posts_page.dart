@@ -13,10 +13,20 @@ class PostPage extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(title:  const Text("Post Screen")),
       body:  Obx((){
-        return _controller.loader.value ? const Center(child: CircularProgressIndicator()): const SizedBox();
+        return _controller.loader.value ? const Center(child: CircularProgressIndicator()): 
+        ListView.separated(itemBuilder: (context, index) {
+          return Row(children: [SizedBox(
+            height: 100,
+            width: 150,
+            child: _controller.photosList[index].thumbnailUrl !=null?Image.network(
+            _controller.photosList[index].thumbnailUrl!
+          ): Text(_controller.photosList[index].thumbnailUrl??"No"),
+          )],);
+        }, separatorBuilder: (context, index) {
+          return SizedBox(height: 10);
+        }, itemCount: _controller.photosList.length)
+        ;
       }),
-      
-     
     );
   } 
 }

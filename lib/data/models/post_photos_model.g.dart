@@ -12,7 +12,7 @@ _$PostPhotosModelImpl _$$PostPhotosModelImplFromJson(
       albumId: (json['albumId'] as num?)?.toInt(),
       id: (json['id'] as num?)?.toInt(),
       title: json['title'] as String?,
-      thumbnaiUrl: json['thumbnaiUrl'] as String?,
+      thumbnailUrl: json['thumbnailUrl'] as String?,
     );
 
 Map<String, dynamic> _$$PostPhotosModelImplToJson(
@@ -21,5 +21,5 @@ Map<String, dynamic> _$$PostPhotosModelImplToJson(
       'albumId': instance.albumId,
       'id': instance.id,
       'title': instance.title,
-      'thumbnaiUrl': instance.thumbnaiUrl,
+      'thumbnailUrl': instance.thumbnailUrl,
     };
