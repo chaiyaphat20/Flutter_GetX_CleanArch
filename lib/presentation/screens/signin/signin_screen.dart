@@ -5,10 +5,13 @@ class SignInScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
+      appBar: AppBar(title:  const Text("Signin Screen")),
       body: Center(
         child: Text("SignIn Screen"),
       ),
     );
   }
 }
+
+//22.16

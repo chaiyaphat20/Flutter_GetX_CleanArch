@@ -1,5 +1,7 @@
+
 import 'package:clean_arch_getx_todo/presentation/controllers/splash_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -10,7 +12,8 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     controller.moveToSignInPage();
-    return const Scaffold(
+    return  Scaffold(
+      appBar: AppBar(title:  Text("Splash Screen")),
       body: Center(
         child: Text("Splash Screen"),
       ),
