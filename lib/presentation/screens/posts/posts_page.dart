@@ -1,6 +1,6 @@
 import 'package:clean_arch_getx_todo/presentation/controllers/post_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:get/get.dart';
 import 'package:get/instance_manager.dart';
 
 class PostPage extends StatelessWidget {
@@ -12,11 +12,11 @@ class PostPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(title:  const Text("Post Screen")),
-      body: Text("data")
+      body:  Obx((){
+        return _controller.loader.value ? const Center(child: CircularProgressIndicator()): const SizedBox();
+      }),
       
-      // Obx((){
-      //   return _controller.loader.value ? const Center(child: CircularProgressIndicator()): const SizedBox();
-      // }),
+     
     );
   } 
 }
