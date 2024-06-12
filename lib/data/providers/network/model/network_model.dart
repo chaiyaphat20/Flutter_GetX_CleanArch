@@ -1,5 +1,5 @@
 
-import 'package:clean_arch_getx_todo/data/providers/network/mode/network_parameters.dart';
+import 'package:clean_arch_getx_todo/data/providers/network/model/network_parameters.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'network_model.freezed.dart';
