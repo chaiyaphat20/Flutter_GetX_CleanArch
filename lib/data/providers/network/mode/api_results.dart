@@ -1,0 +1,28 @@
+
+import 'package:clean_arch_getx_todo/data/providers/network/mode/network_exception.dart';
+import 'package:clean_arch_getx_todo/data/providers/network/mode/network_parameters.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'api_results.freezed.dart';
+
+@freezed
+class ApiResult with _$ApiResult{
+
+  const factory ApiResult.success({
+    required String data,
+    required String url,
+    required Map<String ,String> headers,
+    required int statusCode,
+  }) = _ApiResultSucess;
+
+  const factory ApiResult.error({
+    required String data,
+    required String url,
+    required Map<String ,String> headers,
+    required int statusCode,
+  }) = _ApiResultError;
+
+    const factory ApiResult.failure({
+    required NetworkException networkException
+  }) = _ApiResultFailure;
+}
