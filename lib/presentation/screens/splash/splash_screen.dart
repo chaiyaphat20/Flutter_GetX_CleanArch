@@ -1,10 +1,15 @@
+import 'package:clean_arch_getx_todo/presentation/controllers/splash_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+  SplashScreen({super.key});
 
+  SplashController controller = Get.find<SplashController>();
+  
   @override
   Widget build(BuildContext context) {
+    controller.moveToSignInPage();
     return const Scaffold(
       body: Center(
         child: Text("Splash Screen"),
